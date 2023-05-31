@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <main class="container">
+
+    <section class="rating" id="rating">
+      <img src="./images/icon-star.svg" alt="star icon" class="rating__star">
+  
+      <h1 class="rating-heading">How did we do?</h1>
+      <p class="rating-paragraph">
+        Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+      </p>
+  
+      <form id="form" class="form">
+        <div class="form__field">
+          <div class="form__field-option">
+            <label for="one" class="label">1</label>
+            <input type="radio" name="rate" id="one" value="1">
+          </div>
+          <div class="form__field-option">
+            <label for="two" class="label">2</label>
+            <input type="radio" name="rate" id="two" value="2">
+          </div>
+          <div class="form__field-option">
+            <label for="three" class="label">3</label>
+            <input type="radio" name="rate" id="three" value="3">
+          </div>
+          <div class="form__field-option">
+            <label for="four" class="label">4</label>
+            <input type="radio" name="rate" id="four" value="4">
+          </div>
+          <div class="form__field-option">
+            <label for="five" class="label">5</label>
+            <input type="radio" name="rate" id="five" value="5">
+          </div>
+        </div>
+  
+        <button type="submit" class="form__submit-btn">submit</button>
+      </form>
+    </section>
+  
+    <section class="thank-you" id="message">
+      <img src="./images/illustration-thank-you.svg" alt="thank-you">
+      <span class="complete__rating"></span>
+      <div class="complete__message">
+        <h1 class="rating-heading">Thank you!</h1>
+        <p style="padding: 0 0.25rem;" class="rating-paragraph">
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

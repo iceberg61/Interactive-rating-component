@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+:root {
+    --Light-Grey: hsl(217, 12%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Orange: hsl(25, 97%, 53%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+    --paragraph-font-regular: 1.5rem;
+    --paragraph-font-large: 2.6rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: var(--White);
+    background-color: var(--Very-Dark-Blue);
+    font-size: var(--paragraph-font-regular);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.rating {
+    padding: 3rem;
+    /* display: none; */
+    max-width: 40rem;
+    background-color: var(--Dark-Blue);
+    border-radius: 3rem;
+}
+
+.rating__star {
+    background-color: rgba(225, 225, 225, .05);
+    border-radius: 50%;
+    padding: 1.5rem;
+    margin-block-end: 2rem;
+}
+
+.rating-heading {
+    font-size: var(--paragraph-font-large);
+    padding-block-end: 3rem;
+    font-weight: var(--font-weight-bold);
+}
+
+.rating-paragraph {
+    font-weight: var(--font-weight-regular);
+    color: var(--Light-Grey);
+    font-size: var(--paragraph-font-regular);
+    padding-block-end: 3rem;
+    line-height: 1.7;
+}
+
+.form__field {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__field-option>input {
+    display: none;
+}
+
+.form__field-option>label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 5rem;
+    min-height: 5rem;
+    border-radius: 50%;
+    background-color: rgba(225, 225, 225, .05);
+    font-weight: var(--font-weight-bold);
+    color: var(--Light-Grey);
+    cursor: pointer;
+}
+
+.form__field-option>label:hover {
+    color: var(--Orange);
+    background-color: var(--White);
+}
+
+.form__submit-btn {
+    display: block;
+    padding: 1.6rem 0;
+    width: 100%;
+    border-radius: 3rem;
+    background-color: var(--Orange);
+    letter-spacing: .15rem;
+    color: var(--White);
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    border: 0;
+    outline: none;
+}
+
+.thank-you {
+    padding: 3rem;
+    max-width: 40rem;
+    background-color: var(--Dark-Blue);
+    border-radius: 3rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.complete__rating {
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(225, 225, 225, .05);
+    color: var(--Orange);
+    border-radius: 2rem;
+    margin: 3rem;
+    white-space: nowrap;
+    letter-spacing: .1rem;
+}
+
+.highlight {
+    background-color: var(--Orange) !important;
+    color: var(--White) !important;
+}
+
+.hidden {
+    display: none !important;
+}
+  
+.visible {
+    display: flex !important;
+}
